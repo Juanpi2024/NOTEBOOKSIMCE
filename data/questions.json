@@ -1,0 +1,58 @@
+[
+  {
+    "id": "MATH_4B_001",
+    "subject": "Matemática",
+    "axis": "Números y Operaciones",
+    "achievement_level": "Intermedio",
+    "question": "En la clase de arte, Marcia tiene 112 bolitas rojas, 43 amarillas y 103 azules. ¿Cuántas bolitas tiene Marcia en total?",
+    "options": [
+      {
+        "id": "A",
+        "value": "645 bolitas",
+        "isCorrect": false,
+        "error_analysis": "Parece que hubo una confusión al alinear el valor posicional. Recuerda alinear unidades con unidades."
+      },
+      {
+        "id": "B",
+        "value": "258 bolitas",
+        "isCorrect": true,
+        "feedback_immediate": "¡Excelente trabajo! Lograste sumar correctamente todas las centenas, decenas y unidades."
+      },
+      {
+        "id": "C",
+        "value": "158 bolitas",
+        "isCorrect": false,
+        "error_analysis": "Casi lo logras. Revisa la suma de las centenas (1 + 0 + 1)."
+      }
+    ],
+    "feedback_immediate": "Recuerda siempre alinear unidades con unidades, decenas con decenas, y centenas con centenas."
+  },
+  {
+    "id": "LANG_4B_002",
+    "subject": "Lenguaje",
+    "axis": "Comprensión Lectora",
+    "achievement_level": "Intermedio",
+    "question": "Lee el siguiente fragmento: 'El perro de Juan corrió emocionado hacia el árbol porque vio un nido, pero se detuvo al ver que estaba vacío.' ¿Qué hizo que el perro se detuviera?",
+    "options": [
+      {
+        "id": "A",
+        "value": "Vio a Juan",
+        "isCorrect": false,
+        "error_analysis": "Vuelve a leer el final del texto. ¿Qué detalle menciona sobre el nido?"
+      },
+      {
+        "id": "B",
+        "value": "Vio el nido",
+        "isCorrect": false,
+        "error_analysis": "Ver el nido fue la razón por la que corrió, no por la que se detuvo."
+      },
+      {
+        "id": "C",
+        "value": "Vio que el nido estaba vacío",
+        "isCorrect": true,
+        "feedback_immediate": "¡Muy bien! Identificaste la causa directa de la acción del perro."
+      }
+    ],
+    "feedback_immediate": "Recuerda buscar las palabras clave como 'porque' o 'al ver que' para entender las decisiones de los personajes."
+  }
+]

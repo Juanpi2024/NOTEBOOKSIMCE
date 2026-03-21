@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Súper Estudiante - SIMCE App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🌟 Súper Estudiante 🌟</h1>
+    </header>
+
+    <div class="container" id="app-container">
+        <!-- Login Screen -->
+        <div id="login-screen" style="display: block;">
+            <h2 style="font-size: 2.5rem; margin-bottom: 20px; color: var(--dark);">Ingresa a tu Clase</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 20px; color: #555;">Escribe tu nombre para participar en la lluvia de respuestas.</p>
+            <input type="text" id="student-name" placeholder="Ej: Juan Pérez" style="font-size: 1.8rem; padding: 15px; width: 100%; border-radius: 15px; border: 3px solid var(--secondary); margin-bottom: 25px; text-align: center; outline: none;">
+            <button class="option-btn" onclick="joinClass()" style="width: 100%; background: var(--secondary); color: white; border-color: var(--secondary);">¡Entrar a Jugar! 🚀</button>
+        </div>
+
+        <div id="waiting-screen" class="waiting-anim" style="display: none;">
+            <p>Esperando la señal de tu profesora... 🚀</p>
+        </div>
+
+        <div id="question-screen" style="display: none;">
+            <div class="question-box" id="q-text"></div>
+            <div class="options-grid" id="options-container"></div>
+        </div>
+    </div>
+
+    <div class="feedback-modal" id="feedback-modal">
+        <div class="feedback-content" id="feedback-content">
+            <h2 id="fb-title"></h2>
+            <p id="fb-message"></p>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+</body>
+</html>
