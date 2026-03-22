@@ -105,7 +105,7 @@
       {
         "id": "C",
         "value": "Dorsos.",
-        "is   Correct": false,
+        "isCorrect": false,
         "error_analysis": "El dorso es la parte de arriba (la espalda), mientras que el costado es la parte lateral."
       }
     ],
