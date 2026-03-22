@@ -79,5 +79,26 @@ socket.on('feedback', (data) => {
         feedbackModal.classList.remove('visible');
         waitingScreen.style.display = 'block';
         questionScreen.style.display = 'none';
+        waitingScreen.innerHTML = `<p>Esperando la señal de tu profesora... 🚀</p>`; // reset waiting screen
     }, 8000); // 8 segundos para leer el feedback antes de recargar
+});
+
+socket.on('exam_finished', (medal) => {
+    loginScreen.style.display = 'none';
+    questionScreen.style.display = 'none';
+    feedbackModal.classList.remove('visible');
+    
+    // Transform waiting screen into a glorious full-screen Medal presentation!
+    waitingScreen.style.display = 'block';
+    waitingScreen.className = 'waiting-anim'; // keep animation
+    waitingScreen.innerHTML = `
+        <h1 style="font-size:2.5rem; color:var(--dark); margin-bottom:20px; display:block;">🎉 ACTIVIDAD FINALIZADA 🎉</h1>
+        <p style="font-size:1.5rem; margin-bottom:20px; color:#555;">La profesora ha revisado tus resultados...</p>
+        <div style="background:white; padding:40px 20px; border-radius:20px; border: 5px solid var(--tertiary); box-shadow:0 15px 30px rgba(0,0,0,0.15);">
+            <div style="font-size:4rem; margin-bottom:15px; animation: pulse 1s infinite;">${medal.title.split(' ')[0]}</div>
+            <h2 style="font-size:2.5rem; color:#f39c12; margin-bottom:15px; text-transform:uppercase;">${medal.title.split(' ').slice(1).join(' ')}</h2>
+            <p style="font-size:1.5rem; color:#666;">${medal.desc}</p>
+        </div>
+        <p style="margin-top:30px; font-weight:bold; color:var(--success);">¡Gran trabajo equipo!</p>
+    `;
 });

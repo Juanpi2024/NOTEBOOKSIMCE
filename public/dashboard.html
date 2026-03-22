@@ -37,7 +37,10 @@
                 <p style="color:var(--success)">Tiros Acertados: <strong id="correct-count">0</strong></p>
                 <p style="color:var(--danger)">Tiros Errados: <strong id="incorrect-count">0</strong></p>
                 <br>
-                <button class="btn-stop" onclick="stopQuestion()">Pausar Actividad (Enviar a Sala de Espera)</button>
+                <div style="display:grid; grid-template-columns:1fr; gap:10px;">
+                    <button class="btn-stop" onclick="stopQuestion()">Pausar Actividad (Enviar a Sala de Espera)</button>
+                    <button class="btn-launch" onclick="finishExam()" style="background:var(--tertiary); color:var(--dark); box-shadow: 0 4px 10px rgba(0,0,0,0.1);">🏆 Finalizar Ensayo y Entregar Medallas</button>
+                </div>
             </div>
             
             <!-- Right Panel: Data Analysis and Questions -->

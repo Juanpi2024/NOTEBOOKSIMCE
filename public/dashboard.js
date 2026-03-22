@@ -147,3 +147,9 @@ function launchQuestion(index) {
 function stopQuestion() {
     socket.emit('stop_question');
 }
+
+function finishExam() {
+    if(confirm("¿Estás segura de que deseas finalizar este ensayo? \n¡Esto enviará pantallas de medallas a todos los estudiantes y no podrás seguir lanzando preguntas en esta sesión hasta reiniciar!")) {
+        socket.emit('finish_exam');
+    }
+}

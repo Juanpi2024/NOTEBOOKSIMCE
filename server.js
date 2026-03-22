@@ -96,6 +96,35 @@ io.on('connection', (socket) => {
         io.emit('update_dashboard', gameState);
     });
 
+    socket.on('finish_exam', () => {
+        if (socket.role !== 'teacher') return;
+        gameState.status = 'finished';
+
+        // Calculate medals for each student
+        const students = Object.keys(gameState.connectedStudents);
+        
+        students.forEach(socketId => {
+            const studentName = gameState.connectedStudents[socketId].name;
+            const historyData = answerHistory.filter(h => h.studentName === studentName);
+            
+            let medal = { title: "🏅 Participante Estrella", desc: "¡Gracias por dar tu mejor esfuerzo hoy!" };
+            
+            if (historyData.length > 0) {
+                const corrects = historyData.filter(h => h.isCorrect).length;
+                const pct = corrects / historyData.length;
+                
+                if (pct === 1) medal = { title: "🌟 Maestro Absoluto", desc: "¡Dominaste todas las metas a la perfección!" };
+                else if (pct >= 0.8) medal = { title: "🔍 Analista Experto", desc: "¡Casi perfecto! Tu capacidad analítica es gigante." };
+                else if (pct >= 0.5) medal = { title: "🚀 Estrella Ascendente", desc: "Buen trabajo, estás mejorando a pasos agigantados." };
+                else medal = { title: "❤️ Corazón Valiente", desc: "Nunca te rendiste. ¡De los errores se aprende más rápido!" };
+            }
+            
+            io.to(socketId).emit('exam_finished', medal);
+        });
+        
+        io.emit('update_dashboard', gameState);
+    });
+
     socket.on('disconnect', () => {
         if (socket.role === 'student') {
             delete gameState.connectedStudents[socket.id];
