@@ -1,86 +1,114 @@
 [
   {
-    "id": "SIMCE_4D_05",
-    "subject": "Matemáticas",
-    "axis": "Números y Operaciones",
-    "achievement_level": "Intermedio",
-    "question": "¿Cuál es el resultado de 406 • 3?",
-    "options": [
-      { "id": "A", "value": "1.208", "isCorrect": false, "error_analysis": "Parece que olvidaste sumar la reserva del producto 6 • 3 (18) al multiplicar por el 0." },
-      { "id": "B", "value": "1.218", "isCorrect": true, "feedback_immediate": "¡Excelente cálculo! 400 • 3 = 1.200 y 6 • 3 = 18." },
-      { "id": "C", "value": "1.238", "isCorrect": false, "error_analysis": "Hubo un error en el acarreo o reserva de las decenas." },
-      { "id": "D", "value": "1.248", "isCorrect": false, "error_analysis": "El resultado excede el valor real de la multiplicación." }
-    ],
-    "feedback_immediate": "Multiplica primero las unidades, luego decenas y centenas, sin olvidar las reservas."
-  },
-  {
-    "id": "SIMCE_4D_06",
-    "subject": "Matemáticas",
-    "axis": "Números y Operaciones (Decimales)",
-    "achievement_level": "Intermedio",
-    "question": "¿Cuál es el resultado de 10,38 + 1,4?",
-    "options": [
-      { "id": "A", "value": "10,52", "isCorrect": false, "error_analysis": "Sumaste el 4 a la centésima (8) en lugar de alinearlo con la décima (3)." },
-      { "id": "B", "value": "11,42", "isCorrect": false, "error_analysis": "Error en el alineamiento decimal o en el acarreo de las décimas." },
-      { "id": "C", "value": "11,78", "isCorrect": true, "feedback_immediate": "¡Perfecto! Al alinearlos queda 10,38 + 1,40 = 11,78." },
-      { "id": "D", "value": "11,98", "isCorrect": false, "error_analysis": "Resultado incorrecto por error en la suma de las décimas." }
-    ],
-    "feedback_immediate": "Al sumar decimales, la coma siempre debe estar en la misma columna."
-  },
-  {
-    "id": "SIMCE_4D_10",
-    "subject": "Matemáticas",
-    "axis": "Números y Operaciones (Fracciones/Decimales)",
+    "id": "TALLER_SIMCE_01_02",
+    "subject": "Lenguaje y Comunicación",
+    "axis": "Lectura (Géneros Literarios)",
     "achievement_level": "Elemental",
-    "question": "Observa un entero dividido en 10 partes iguales donde 3 están pintadas de gris. ¿Qué número decimal representa las partes pintadas?",
+    "question": "De acuerdo al texto 'La zorra y las uvas', ¿qué tipo de texto es?",
     "options": [
-      { "id": "A", "value": "0,3", "isCorrect": true, "feedback_immediate": "¡Correcto! 3 partes de 10 corresponden a tres décimas." },
-      { "id": "B", "value": "0,7", "isCorrect": false, "error_analysis": "Ese número representa las partes que NO están pintadas (blancas)." },
-      { "id": "C", "value": "3,0", "isCorrect": false, "error_analysis": "Eso representaría 3 enteros completos, no 3 partes pequeñas." },
-      { "id": "D", "value": "3,7", "isCorrect": false, "error_analysis": "Este número no corresponde a la representación gráfica mostrada." }
+      {
+        "id": "A",
+        "value": "Una fábula.",
+        "isCorrect": true,
+        "feedback_immediate": "¡Correcto! Es una fábula porque presenta animales con características humanas y nos deja una enseñanza o moraleja."
+      },
+      {
+        "id": "B",
+        "value": "Un cuento.",
+        "isCorrect": false,
+        "error_analysis": "Aunque cuenta una historia, el objetivo principal de este texto es dejar una enseñanza moral a través de animales."
+      },
+      {
+        "id": "C",
+        "value": "Una leyenda.",
+        "isCorrect": false,
+        "error_analysis": "Las leyendas suelen explicar el origen de algo fantástico o real de una localidad, lo cual no ocurre aquí."
+      }
     ],
-    "feedback_immediate": "Cada parte de un entero dividido en 10 se llama 'décima' (0,1)."
+    "feedback_immediate": "Recuerda que si los personajes son animales y hay una moraleja, estamos ante una fábula."
   },
   {
-    "id": "SIMCE_4D_17",
-    "subject": "Matemáticas",
-    "axis": "Patrones y Álgebra",
+    "id": "TALLER_SIMCE_01_06",
+    "subject": "Lenguaje y Comunicación",
+    "axis": "Gramática (Semántica)",
     "achievement_level": "Intermedio",
-    "question": "En una cuadrícula con los números 42, 53 y 64 destacados en diagonal, ¿qué patrón se observa?",
+    "question": "Reemplaza la palabra destacada por el antónimo correspondiente: 'Tu gatito tiene la cara TRISTE'.",
     "options": [
-      { "id": "A", "value": "Aumentan de 1 en 1", "isCorrect": false, "error_analysis": "Eso sería si los números fueran correlativos (42, 43, 44)." },
-      { "id": "B", "value": "Aumentan de 2 en 2", "isCorrect": false, "error_analysis": "La diferencia entre 53 y 42 es mucho mayor que 2." },
-      { "id": "C", "value": "Aumentan de 10 en 10", "isCorrect": false, "error_analysis": "Eso ocurriría si bajaras verticalmente en la misma columna (42, 52, 62)." },
-      { "id": "D", "value": "Aumentan de 11 en 11", "isCorrect": true, "feedback_immediate": "¡Exacto! 42 + 11 = 53, y 53 + 11 = 64." }
+      {
+        "id": "A",
+        "value": "Apenada.",
+        "isCorrect": false,
+        "error_analysis": "Esta palabra es un sinónimo (significa lo mismo), pero buscamos el antónimo (significado opuesto)."
+      },
+      {
+        "id": "B",
+        "value": "Alegre.",
+        "isCorrect": true,
+        "feedback_immediate": "¡Excelente! 'Alegre' es lo opuesto a 'triste'."
+      },
+      {
+        "id": "C",
+        "value": "Fea.",
+        "isCorrect": false,
+        "error_analysis": "Esta palabra califica el aspecto físico, no el estado de ánimo opuesto a la tristeza."
+      }
     ],
-    "feedback_immediate": "Para hallar el patrón, resta dos números consecutivos de la serie."
+    "feedback_immediate": "Los antónimos son palabras que expresan ideas totalmente opuestas."
   },
   {
-    "id": "SIMCE_4D_20",
-    "subject": "Matemáticas",
-    "axis": "Álgebra",
+    "id": "TALLER_SIMCE_03_14",
+    "subject": "Lenguaje y Comunicación",
+    "axis": "Lectura (Comprensión Explicita)",
     "achievement_level": "Intermedio",
-    "question": "Alonso guardó 15 autitos de los 40 que tiene. ¿Qué ecuación permite calcular la cantidad X que NO guardó?",
+    "question": "En el texto 'Vida Animal', ¿hace cuántos años aparecieron los reptiles en nuestro planeta?",
     "options": [
-      { "id": "A", "value": "X + 15 = 40", "isCorrect": true, "feedback_immediate": "¡Muy bien! Lo que falta más lo que guardó debe dar el total de 40." },
-      { "id": "B", "value": "X - 15 = 40", "isCorrect": false, "error_analysis": "Esto daría un valor de 55, ¡más autitos de los que tiene en total!" },
-      { "id": "C", "value": "X + 25 = 40", "isCorrect": false, "error_analysis": "Aunque 25 es la respuesta, la ecuación pide representar la relación con el dato dado (15)." },
-      { "id": "D", "value": "X - 25 = 40", "isCorrect": false, "error_analysis": "Esta ecuación no representa el problema planteado." }
+      {
+        "id": "A",
+        "value": "340 millones de años.",
+        "isCorrect": true,
+        "feedback_immediate": "¡Correcto! El texto menciona que aparecieron hace aproximadamente 340 millones de años, mucho antes que el hombre."
+      },
+      {
+        "id": "B",
+        "value": "100 millones de años.",
+        "isCorrect": false,
+        "error_analysis": "Este dato no aparece en el texto. Revisa el primer párrafo de la sección 'Reptiles'."
+      },
+      {
+        "id": "C",
+        "value": "Al mismo tiempo que el hombre.",
+        "isCorrect": false,
+        "error_analysis": "El texto aclara explícitamente que aparecieron 'mucho tiempo antes que el hombre'."
+      }
     ],
-    "feedback_immediate": "La suma de las partes siempre es igual al total."
+    "feedback_immediate": "Siempre busca la información numérica específica en los textos informativos."
   },
   {
-    "id": "SIMCE_4D_30",
-    "subject": "Matemáticas",
-    "axis": "Medición",
-    "achievement_level": "Avanzado",
-    "question": "Calcula el volumen de la figura formada por cubos de 1 u3 (2 capas: una de 4x4 y otra superior de 4x5 con un escalón).",
+    "id": "TALLER_SIMCE_03_21",
+    "subject": "Lenguaje y Comunicación",
+    "axis": "Vocabulario en Contexto",
+    "achievement_level": "Intermedio",
+    "question": "En el fragmento sobre las Yararás: 'Sobre los COSTADOS del cuerpo se observan figuras...', ¿qué significa la palabra costados?",
     "options": [
-      { "id": "A", "value": "20 u3", "isCorrect": false, "error_analysis": "Este valor solo cuenta una parte de la estructura." },
-      { "id": "B", "value": "26 u3", "isCorrect": false, "error_analysis": "Parece que hubo un error al contar los cubos de la capa inferior o la profundidad." },
-      { "id": "C", "value": "36 u3", "isCorrect": true, "feedback_immediate": "¡Excelente visión espacial! Contaste correctamente todos los cubos." },
-      { "id": "D", "value": "40 u3", "isCorrect": false, "error_analysis": "Contaste cubos que no existen (la figura no es un prisma completo)." }
+      {
+        "id": "A",
+        "value": "Dibujos.",
+        "isCorrect": false,
+        "error_analysis": "Aunque hay dibujos en los costados, la palabra se refiere a la ubicación física en el cuerpo del animal."
+      },
+      {
+        "id": "B",
+        "value": "Lados.",
+        "isCorrect": true,
+        "feedback_immediate": "¡Muy bien! Los costados de un cuerpo son sus partes laterales o lados."
+      },
+      {
+        "id": "C",
+        "value": "Dorsos.",
+        "is   Correct": false,
+        "error_analysis": "El dorso es la parte de arriba (la espalda), mientras que el costado es la parte lateral."
+      }
     ],
-    "feedback_immediate": "El volumen es la cantidad de espacio que ocupa el cuerpo, cuenta los cubos por capas."
+    "feedback_immediate": "Sustituir la palabra por sus opciones te ayuda a encontrar el significado correcto en la oración."
   }
 ]
