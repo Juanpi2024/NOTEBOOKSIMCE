@@ -110,5 +110,547 @@
       }
     ],
     "feedback_immediate": "Sustituir la palabra por sus opciones te ayuda a encontrar el significado correcto en la oración."
+  },
+  {
+    "id": "ASTORECA_MAT_01",
+    "subject": "Matemáticas",
+    "axis": "Números y Operaciones",
+    "achievement_level": "Elemental",
+    "question": "La mamá le dice a Juan: 'escribe SEIS MIL DOSCIENTOS DOS'. ¿Cómo debe escribirlo Juan?",
+    "options": [
+      {
+        "id": "A",
+        "value": "6 022",
+        "isCorrect": false,
+        "error_analysis": "Omitiste la centena. Este número se lee como seis mil veintidós."
+      },
+      {
+        "id": "B",
+        "value": "6 000 202",
+        "isCorrect": false,
+        "error_analysis": "Escribiste los números por separado. Recuerda que los números se agrupan por valor posicional."
+      },
+      {
+        "id": "C",
+        "value": "61 202",
+        "isCorrect": false,
+        "error_analysis": "Agregaste una decena de mil extra. Este número es el sesenta y un mil doscientos dos."
+      },
+      {
+        "id": "D",
+        "value": "6 202",
+        "isCorrect": true,
+        "feedback_immediate": "¡Excelente! Ubicaste correctamente el 6 en la unidad de mil, el 2 en la centena y el 2 en la unidad[cite: 2241, 2246]."
+      }
+    ],
+    "feedback_immediate": "Para escribir números grandes, identifica primero las unidades de mil, luego centenas, decenas y unidades."
+  },
+  {
+    "id": "ASTORECA_MAT_02",
+    "subject": "Matemáticas",
+    "axis": "Patrones y Álgebra",
+    "achievement_level": "Intermedio",
+    "question": "En la serie aritmética: 101 ; 113 ; 125 ; 137 ; ? ; 161. ¿Cuál es el número que falta?",
+    "options": [
+      {
+        "id": "A",
+        "value": "160",
+        "isCorrect": false,
+        "error_analysis": "Este número está justo antes del final, pero no sigue la regla de aumento de la serie."
+      },
+      {
+        "id": "B",
+        "value": "138",
+        "isCorrect": false,
+        "error_analysis": "Solo sumaste 1 al número anterior. Debes encontrar la diferencia constante entre todos los números."
+      },
+      {
+        "id": "C",
+        "value": "149",
+        "isCorrect": true,
+        "feedback_immediate": "¡Muy bien! Descubriste que el patrón es sumar 12 a cada número (137 + 12 = 149)[cite: 2248, 2259]."
+      },
+      {
+        "id": "D",
+        "value": "157",
+        "isCorrect": false,
+        "error_analysis": "Calculaste mal la suma. Recuerda que la diferencia entre 137 y 125 es 12."
+      }
+    ],
+    "feedback_immediate": "En una serie aritmética, primero resta dos números seguidos para encontrar el 'patrón' o diferencia."
+  },
+  {
+    "id": "ASTORECA_MAT_03",
+    "subject": "Matemáticas",
+    "axis": "Números y Operaciones",
+    "achievement_level": "Intermedio",
+    "question": "Cincuenta decenas es equivalente a:",
+    "options": [
+      {
+        "id": "A",
+        "value": "500 unidades.",
+        "isCorrect": true,
+        "feedback_immediate": "¡Perfecto! Como cada decena vale 10, multiplicas 50 x 10 = 500 unidades[cite: 2261, 2263]."
+      },
+      {
+        "id": "B",
+        "value": "500 centenas.",
+        "isCorrect": false,
+        "error_analysis": "Cincuenta decenas es mucho menor que quinientas centenas (que serían 50.000 unidades)."
+      },
+      {
+        "id": "C",
+        "value": "50 unidades.",
+        "isCorrect": false,
+        "error_analysis": "Confundiste decenas con unidades simples. 50 unidades son solo 5 decenas."
+      },
+      {
+        "id": "D",
+        "value": "50 centenas.",
+        "isCorrect": false,
+        "error_analysis": "50 centenas equivalen a 5.000 unidades, no a 500."
+      }
+    ],
+    "feedback_immediate": "Recuerda siempre: 1 Decena = 10 Unidades; 1 Centena = 100 Unidades."
+  },
+  {
+    "id": "ASTORECA_MAT_13",
+    "subject": "Matemáticas",
+    "axis": "Números y Operaciones",
+    "achievement_level": "Intermedio",
+    "question": "En una granja hay 50 animales: 25 conejos, 5 vacas y el resto son gallinas. ¿Cuántas gallinas hay?",
+    "options": [
+      {
+        "id": "A",
+        "value": "80",
+        "isCorrect": false,
+        "error_analysis": "Sumaste todos los números pero el total no puede ser mayor que 50."
+      },
+      {
+        "id": "B",
+        "value": "20",
+        "isCorrect": true,
+        "feedback_immediate": "¡Excelente! Sumaste conejos y vacas (25 + 5 = 30) y luego restaste al total (50 - 30 = 20)[cite: 2348, 2351]."
+      },
+      {
+        "id": "C",
+        "value": "45",
+        "isCorrect": false,
+        "error_analysis": "Parece que solo restaste las vacas al total, olvidando restar los conejos."
+      },
+      {
+        "id": "D",
+        "value": "30",
+        "isCorrect": false,
+        "error_analysis": "Este es el total de animales que NO son gallinas. Debes restarlo de 50 para hallar las gallinas."
+      }
+    ],
+    "feedback_immediate": "Para resolver problemas de 'el resto', suma primero las partes conocidas y réstalas del total."
+  },
+  {
+    "id": "ASTORECA_MAT_21",
+    "subject": "Matemáticas",
+    "axis": "Números y Operaciones (Fracciones)",
+    "achievement_level": "Avanzado",
+    "question": "El tren viaja de Surina a Turán pasando por Caupolicán y San Pedro (todos a igual distancia). ¿Qué parte del recorrido total habrá hecho al detenerse en Caupolicán?",
+    "options": [
+      {
+        "id": "A",
+        "value": "La cuarta parte del recorrido.",
+        "isCorrect": false,
+        "error_analysis": "Hay 4 pueblos, pero el trayecto total se divide en 3 tramos iguales. Caupolicán es el primer tramo."
+      },
+      {
+        "id": "B",
+        "value": "La tercera parte del recorrido.",
+        "isCorrect": true,
+        "feedback_immediate": "¡Muy bien! El viaje completo tiene 3 tramos (1: S-C, 2: C-SP, 3: SP-T). Caupolicán es el final del primer tramo de tres[cite: 2435, 2440, 2446]."
+      },
+      {
+        "id": "C",
+        "value": "La mitad del recorrido.",
+        "isCorrect": false,
+        "error_analysis": "La mitad sería llegar justo entre Caupolicán y San Pedro, o haber pasado 1.5 tramos."
+      },
+      {
+        "id": "D",
+        "value": "El total del recorrido.",
+        "isCorrect": false,
+        "error_analysis": "El total es llegar a Turán. En Caupolicán apenas está comenzando."
+      }
+    ],
+    "feedback_immediate": "Cuenta los 'espacios' o tramos entre los puntos para identificar la fracción del camino."
+  },
+  {
+    "id": "ASTORECA_MAT_23",
+    "subject": "Matemáticas",
+    "axis": "Geometría",
+    "achievement_level": "Intermedio",
+    "question": "¿Cuál cuerpo tiene 8 vértices, 6 caras en total y 4 de ellas son rectángulos iguales?",
+    "options": [
+      {
+        "id": "A",
+        "value": "Pirámide pentagonal.",
+        "isCorrect": false,
+        "error_analysis": "Esta tiene 6 vértices y sus caras laterales son triángulos, no rectángulos."
+      },
+      {
+        "id": "B",
+        "value": "Prisma de base cuadrada (Paralelepípedo).",
+        "isCorrect": true,
+        "feedback_immediate": "¡Correcto! Tiene 8 esquinas (vértices), 6 caras y sus 4 caras laterales son rectángulos iguales[cite: 2462, 2464, 2465]."
+      },
+      {
+        "id": "C",
+        "value": "Prisma hexagonal.",
+        "isCorrect": false,
+        "error_analysis": "Este cuerpo tiene 12 vértices y 8 caras en total."
+      },
+      {
+        "id": "D",
+        "value": "Pirámide cuadrangular.",
+        "isCorrect": false,
+        "error_analysis": "Tiene solo 5 vértices y 5 caras."
+      }
+    ],
+    "feedback_immediate": "Los vértices son las 'puntas' del cuerpo. Cuéntalos con cuidado para identificar la figura."
+  },
+  {
+    "id": "ASTORECA_C_01",
+    "subject": "Matemáticas",
+    "axis": "Números y Operaciones",
+    "achievement_level": "Elemental",
+    "question": "A principio de año una planta medía 9 cm. de largo. Han pasado 9 meses y la planta ahora mide 17 centímetros. ¿Cuántos centímetros creció la planta?",
+    "options": [
+      {
+        "id": "A",
+        "value": "26 cm.",
+        "isCorrect": false,
+        "error_analysis": "Parece que sumaste las dos medidas (9 + 17). Para saber cuánto creció, debes buscar la diferencia entre la medida inicial y la final."
+      },
+      {
+        "id": "B",
+        "value": "17 cm.",
+        "isCorrect": false,
+        "error_analysis": "Esa es la medida actual de la planta, no la cantidad de centímetros que aumentó desde el inicio."
+      },
+      {
+        "id": "C",
+        "value": "8 cm.",
+        "isCorrect": true,
+        "feedback_immediate": "¡Excelente! Al restar la medida final menos la inicial (17 - 9) obtenemos correctamente el crecimiento de 8 cm."
+      },
+      {
+        "id": "D",
+        "value": "9 cm.",
+        "isCorrect": false,
+        "error_analysis": "Este valor corresponde a la medida inicial o al número de meses transcurridos, no al crecimiento real."
+      }
+    ],
+    "feedback_immediate": "Recuerda que para encontrar un aumento o cambio, utilizamos la resta entre el valor final y el inicial."
+  },
+  {
+    "id": "ASTORECA_C_02",
+    "subject": "Matemáticas",
+    "axis": "Medición",
+    "achievement_level": "Intermedio",
+    "question": "El largo total de Chile es de 4 329 km. ¿Cuántos metros son?",
+    "options": [
+      {
+        "id": "A",
+        "value": "432 metros",
+        "isCorrect": false,
+        "error_analysis": "Este número es mucho menor. Recuerda que un solo kilómetro ya tiene 1.000 metros."
+      },
+      {
+        "id": "B",
+        "value": "43 290 metros",
+        "isCorrect": false,
+        "error_analysis": "Aquí solo multiplicaste por 10. Para pasar de kilómetros a metros debes multiplicar por 1.000."
+      },
+      {
+        "id": "C",
+        "value": "432 900 metros",
+        "isCorrect": false,
+        "error_analysis": "Multiplicaste por 100. Recuerda que 1 km = 1.000 m, por lo que faltó un cero en tu cálculo."
+      },
+      {
+        "id": "D",
+        "value": "4 329 000 metros",
+        "isCorrect": true,
+        "feedback_immediate": "¡Perfecto! Multiplicaste correctamente 4.329 por 1.000. ¡Chile es muy largo!"
+      }
+    ],
+    "feedback_immediate": "Para convertir kilómetros a metros, siempre añade tres ceros al final del número (multiplicar por 1.000)."
+  },
+  {
+    "id": "ASTORECA_C_07",
+    "subject": "Matemáticas",
+    "axis": "Tratamiento de la Información",
+    "achievement_level": "Intermedio",
+    "question": "Según el gráfico de 'Frutas Favoritas', ¿cuántos estudiantes en total eligieron las manzanas y las uvas?",
+    "options": [
+      {
+        "id": "A",
+        "value": "7",
+        "isCorrect": false,
+        "error_analysis": "Este número no corresponde a la suma de ambas categorías. Revisa bien la altura de cada barra."
+      },
+      {
+        "id": "B",
+        "value": "8",
+        "isCorrect": false,
+        "error_analysis": "Parece un error al leer los valores en el eje vertical (Número de Estudiantes)."
+      },
+      {
+        "id": "C",
+        "value": "9",
+        "isCorrect": false,
+        "error_analysis": "Este valor es cercano, pero no es la suma correcta de los que prefieren manzanas y uvas."
+      },
+      {
+        "id": "D",
+        "value": "15",
+        "isCorrect": true,
+        "feedback_immediate": "¡Muy bien! Manzanas (11) + Uvas (4) da un total de 15 estudiantes."
+      }
+    ],
+    "feedback_immediate": "Cuando te piden el 'total' entre dos categorías de un gráfico, debes identificar el valor de cada una y sumarlos."
+  },
+  {
+    "id": "ASTORECA_C_20",
+    "subject": "Matemáticas",
+    "axis": "Números y Operaciones",
+    "achievement_level": "Intermedio",
+    "question": "El número 1 254 se descompone en:",
+    "options": [
+      {
+        "id": "A",
+        "value": "1000 + 200 + 5 + 4",
+        "isCorrect": false,
+        "error_analysis": "Pusiste un 5 en lugar de 50. Recuerda que el 5 está en la posición de las decenas."
+      },
+      {
+        "id": "B",
+        "value": "1000 + 200 + 50 + 4",
+        "isCorrect": true,
+        "feedback_immediate": "¡Excelente! Identificaste correctamente el valor de cada dígito según su posición: 1 UM, 2 C, 5 D y 4 U."
+      },
+      {
+        "id": "C",
+        "value": "1000 + 200 + 500 + 4",
+        "isCorrect": false,
+        "error_analysis": "Pusiste 500 en las decenas. Eso indicaría que hay 5 centenas extra."
+      },
+      {
+        "id": "D",
+        "value": "1000 + 20 + 5 + 40",
+        "isCorrect": false,
+        "error_analysis": "Los valores no corresponden a las posiciones del número original 1.254."
+      }
+    ],
+    "feedback_immediate": "La descomposición aditiva muestra el valor real de cada número según si es unidad, decena, centena o unidad de mil."
+  },
+  {
+    "id": "ASTORECA_C_27",
+    "subject": "Matemáticas",
+    "axis": "Números y Operaciones (Fracciones)",
+    "achievement_level": "Avanzado",
+    "question": "Sebastián compró 36 galletas. Un cuarto de ellas son de avena y un tercio, de chocolate. ¿Cuántas galletas son de avena?",
+    "options": [
+      {
+        "id": "A",
+        "value": "4",
+        "isCorrect": false,
+        "error_analysis": "Confundiste el denominador (4) con el resultado. Debes dividir el total (36) por 4."
+      },
+      {
+        "id": "B",
+        "value": "6",
+        "isCorrect": false,
+        "error_analysis": "Este cálculo no corresponde a la cuarta parte de 36."
+      },
+      {
+        "id": "C",
+        "value": "9",
+        "isCorrect": true,
+        "feedback_immediate": "¡Brillante! Para calcular un cuarto de 36, divides 36 entre 4, lo que da 9 galletas de avena."
+      },
+      {
+        "id": "D",
+        "value": "12",
+        "isCorrect": false,
+        "error_analysis": "Este es el cálculo de un tercio (galletas de chocolate), pero se te preguntó por las de avena (un cuarto)."
+      }
+    ],
+    "feedback_immediate": "Para sacar una parte (fracción) de un número total, divide el total por el denominador de la fracción."
+  },
+  {
+    "id": "ASTORECA_C_08",
+    "subject": "Matemáticas",
+    "axis": "Geometría",
+    "achievement_level": "Avanzado",
+    "question": "Iván clasificó cuerpos geométricos en dos grupos: uno con cubos y prismas, y otro con esferas, cilindros y conos. ¿En qué se fijó Iván?",
+    "options": [
+      {
+        "id": "A",
+        "value": "El número de caras.",
+        "isCorrect": false,
+        "error_analysis": "La esfera no tiene caras planas, por lo que este criterio no sirve para ambos grupos."
+      },
+      {
+        "id": "B",
+        "value": "Los que tienen puntas.",
+        "isCorrect": true,
+        "feedback_immediate": "¡Correcto! Separó los poliedros (con vértices o 'puntas') de los cuerpos redondos."
+      },
+      {
+        "id": "C",
+        "value": "La forma de sus caras.",
+        "isCorrect": false,
+        "error_analysis": "Nuevamente, los cuerpos redondos no tienen caras poligonales definidas."
+      }
+    ],
+    "feedback_immediate": "Los cuerpos geométricos se pueden clasificar en poliedros (caras planas) y cuerpos redondos (caras curvas)."
+  },
+  {
+    "id": "ASTORECA_A_19",
+    "subject": "Matemáticas",
+    "axis": "Geometría",
+    "achievement_level": "Elemental",
+    "question": "¿Cuál señal de tránsito tiene forma más parecida a un triángulo?",
+    "options": [
+      {
+        "id": "A",
+        "value": "Señal de distancia (rectángulo).",
+        "isCorrect": false,
+        "error_analysis": "Esta señal tiene cuatro lados y cuatro ángulos rectos, es un rectángulo[cite: 1118, 1119]."
+      },
+      {
+        "id": "B",
+        "value": "Señal de fin de restricción (círculo).",
+        "isCorrect": false,
+        "error_analysis": "Esta señal es redonda, no tiene lados rectos ni vértices como un triángulo[cite: 1121, 1122]."
+      },
+      {
+        "id": "C",
+        "value": "Señal de Ceda el Paso.",
+        "isCorrect": true,
+        "feedback_immediate": "¡Correcto! La señal de Ceda el Paso tiene tres lados y tres vértices, formando un triángulo invertido[cite: 1123, 1124]."
+      }
+    ],
+    "feedback_immediate": "Los triángulos se identifican por tener exactamente tres lados rectos[cite: 1117]."
+  },
+  {
+    "id": "ASTORECA_A_20",
+    "subject": "Matemáticas",
+    "axis": "Tratamiento de la Información",
+    "achievement_level": "Intermedio",
+    "question": "En el gráfico de 'Pantalones vendidos', ¿cuántos pantalones se vendieron en total durante los 5 días de la semana?",
+    "options": [
+      {
+        "id": "A",
+        "value": "185",
+        "isCorrect": true,
+        "feedback_immediate": "¡Excelente! Sumaste correctamente los valores de cada día: 40 + 25 + 40 + 45 + 35 = 185[cite: 1130, 1140]."
+      },
+      {
+        "id": "B",
+        "value": "45",
+        "isCorrect": false,
+        "error_analysis": "Ese valor corresponde solo al día jueves, que fue el día de mayor venta, pero no al total de la semana[cite: 1138, 1141]."
+      },
+      {
+        "id": "C",
+        "value": "170",
+        "isCorrect": false,
+        "error_analysis": "Parece que hubo un error en la suma de las barras. Revisa nuevamente el valor del martes (25) y viernes (35)[cite: 1132, 1142]."
+      }
+    ],
+    "feedback_immediate": "Para hallar el total en un gráfico de barras, debes identificar el valor de cada barra y sumarlos todos[cite: 1139, 1140]."
+  },
+  {
+    "id": "NINJA_MAT_19",
+    "subject": "Matemáticas",
+    "axis": "Geometría",
+    "achievement_level": "Avanzado",
+    "question": "Observa la figura 3D formada por cubos. ¿Cuál es la vista desde ARRIBA (planta) de dicha figura?",
+    "options": [
+      {
+        "id": "A",
+        "value": "Vista con 3 bloques verticales y uno lateral.",
+        "isCorrect": false,
+        "error_analysis": "Esa imagen representa una vista lateral o frontal, no lo que verías si miraras el cuerpo desde arriba[cite: 72, 73]."
+      },
+      {
+        "id": "B",
+        "value": "Vista en forma de 'T' horizontal.",
+        "isCorrect": true,
+        "feedback_immediate": "¡Muy bien! Al mirar desde arriba, solo percibes las caras superiores de los cubos, que forman una figura plana específica[cite: 74, 77]."
+      },
+      {
+        "id": "C",
+        "value": "Vista con bloques en cruz.",
+        "isCorrect": false,
+        "error_analysis": "Esta disposición no coincide con la ubicación de los cubos en la estructura original[cite: 70, 75]."
+      }
+    ],
+    "feedback_immediate": "Imagina que eres un pájaro volando sobre la figura; solo verías los cuadrados que apuntan al cielo[cite: 72]."
+  },
+  {
+    "id": "NINJA_MAT_35",
+    "subject": "Matemáticas",
+    "axis": "Tratamiento de la Información",
+    "achievement_level": "Intermedio",
+    "question": "Según el gráfico de trabajadores y deporte, ¿qué afirmación es correcta sobre la MAYORÍA de los trabajadores?",
+    "options": [
+      {
+        "id": "A",
+        "value": "Practican deportes todos los días (7 días).",
+        "isCorrect": false,
+        "error_analysis": "El gráfico muestra que solo 3 personas entrenan los 7 días, por lo que no son la mayoría[cite: 156, 172]."
+      },
+      {
+        "id": "B",
+        "value": "Practican deportes 3 o más días a la semana.",
+        "isCorrect": true,
+        "feedback_immediate": "¡Correcto! Si sumas las barras de 3, 4, 5, 6 y 7 días, obtienes la mayor parte de la muestra de trabajadores[cite: 155, 174]."
+      },
+      {
+        "id": "C",
+        "value": "Practican deportes 2 o menos días a la semana.",
+        "isCorrect": false,
+        "error_analysis": "La suma de los trabajadores que entrenan 0, 1 o 2 días es menor que el resto del grupo[cite: 156, 163]."
+      }
+    ],
+    "feedback_immediate": "La mayoría se identifica observando dónde se concentran las barras más altas del gráfico[cite: 154, 158]."
+  },
+  {
+    "id": "ASTORECA_C_30",
+    "subject": "Matemáticas",
+    "axis": "Medición (Fracciones)",
+    "achievement_level": "Avanzado",
+    "question": "Marta tiene 4 metros de cinta. Si corta la cinta en pedazos de 1/2 metro cada uno, ¿cuántos pedazos obtendrá?",
+    "options": [
+      {
+        "id": "A",
+        "value": "2 pedazos.",
+        "isCorrect": false,
+        "error_analysis": "Dividiste 4 entre 2. Recuerda que estás dividiendo por la mitad de un metro, por lo que saldrán más trozos, no menos[cite: 1635]."
+      },
+      {
+        "id": "B",
+        "value": "4 pedazos.",
+        "isCorrect": false,
+        "error_analysis": "Si cortas 4 metros en trozos de 1/2 metro, obtienes 2 trozos por cada metro[cite: 1636]."
+      },
+      {
+        "id": "C",
+        "value": "8 pedazos.",
+        "isCorrect": true,
+        "feedback_immediate": "¡Excelente! Como en cada metro caben dos medios metros, en 4 metros hay 4 x 2 = 8 pedazos[cite: 1636]."
+      }
+    ],
+    "feedback_immediate": "Cuando divides un entero por una fracción como 1/2, el resultado es el doble del entero[cite: 1635]."
   }
 ]
