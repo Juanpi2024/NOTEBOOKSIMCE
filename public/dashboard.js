@@ -9,14 +9,9 @@ const questionsList = document.getElementById('questions-list');
 const axisAnalysis = document.getElementById('axis-analysis');
 const studentAnalysis = document.getElementById('student-analysis');
 
-// Boss Elements
-const hpBar = document.getElementById('hp-bar');
-const hpText = document.getElementById('hp-text');
-const monsterEmoji = document.getElementById('monster-emoji');
-const bossConfetti = document.getElementById('boss-confetti');
-
+// Pedagogical Elements
+// Last boss states removed
 let allQuestions = [];
-let lastHp = 1000;
 
 socket.on('connect', () => {
     socket.emit('join_role', { role: 'teacher' });
@@ -44,34 +39,7 @@ socket.on('update_dashboard', (state) => {
     correctCount.textContent = answers.filter(a => a.isCorrect).length;
     incorrectCount.textContent = answers.filter(a => !a.isCorrect).length;
 
-    // 3. Batalla del Monstruo (Boss Logic)
-    const m = state.monster;
-    if (m.hp < lastHp) {
-        // Recibió Daño! Animación CSS explosiva
-        monsterEmoji.style.transform = "scale(0.8) rotate(-15deg)";
-        monsterEmoji.textContent = "💥👾💥";
-        setTimeout(() => {
-            monsterEmoji.style.transform = "scale(1) rotate(0deg)";
-            if (m.hp > 0) monsterEmoji.textContent = "👾";
-        }, 300);
-    }
-    lastHp = m.hp;
-    
-    const hpPct = (m.hp / m.maxHp) * 100;
-    hpBar.style.width = hpPct + '%';
-    hpText.textContent = `${m.hp} / ${m.maxHp} HP`;
-    
-    if (m.hp <= 0) {
-        monsterEmoji.textContent = "💀";
-        monsterEmoji.style.transform = "scale(1.2)";
-        hpText.textContent = "¡MONSTRUO DESTRUIDO! 🎉";
-        hpBar.style.width = '0%';
-        bossConfetti.style.display = 'block';
-    } else {
-        bossConfetti.style.display = 'none';
-        // Ensure emoji resets if not dead
-        if (m.hp === lastHp && m.hp > 0) monsterEmoji.textContent = "👾"; 
-    }
+    // (Boss Logic Removed from Here)
 });
 
 // Advanced Analytics Engine (Radar Estratégico)
@@ -137,7 +105,7 @@ function renderQuestions() {
                 <span style="background:var(--tertiary); padding:2px 8px; border-radius:10px; font-size:0.8rem;">Munición: ${q.achievement_level}</span>
             </div>
             <p style="margin: 10px 0;">${q.question}</p>
-            <button class="btn-launch" onclick="launchQuestion(${index})">🚀 Cargar a todos los cañones (${q.id})</button>
+            <button class="btn-launch" onclick="launchQuestion(${index})">🚀 Enviar pregunta a la clase (${q.id})</button>
         `;
         questionsList.appendChild(card);
     });

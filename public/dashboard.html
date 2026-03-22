@@ -6,91 +6,38 @@
     <title>Panel de Profesor - Análisis Integral SIMCE</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        .monster-container {
-            background: #1e272e;
-            border-radius: 20px;
-            padding: 30px;
-            margin-bottom: 20px;
-            text-align: center;
-            color: white;
-            position: relative;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-            border: 4px solid #485460;
-        }
-        #monster-emoji {
-            font-size: 6rem;
-            margin: 20px 0;
-            transition: transform 0.1s;
-            text-shadow: 0 0 20px rgba(0,0,0,0.5);
-        }
-        .hp-bar-bg {
-            width: 80%;
-            margin: 0 auto;
-            background: #2f3640;
-            height: 40px;
-            border-radius: 20px;
-            border: 4px solid #dcdde1;
-            position: relative;
-            overflow: hidden;
-            box-shadow: inset 0 5px 15px rgba(0,0,0,0.5);
-        }
-        #hp-bar {
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, #e74c3c, #ff7979);
-            border-radius: 12px;
-            transition: width 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        }
-        #hp-text {
-            position: absolute;
-            width: 100%;
-            top: 0;
-            left: 0;
-            line-height: 32px;
-            font-weight: 900;
-            font-size: 1.5rem;
-            letter-spacing: 2px;
-            text-shadow: 2px 2px 0px rgba(0,0,0,0.8);
-        }
+        /* Pedagogical Dashboard Styles */
+        .dashboard-grid { margin-top: 20px; }
     </style>
 </head>
 <body>
     <header>
-        <h1>👩‍🏫 Panel de Control SIMCE: ¡La Batalla Cooperativa!</h1>
+        <h1>👩‍🏫 Panel Principal: Evaluación Formativa SIMCE 📊</h1>
     </header>
 
     <div class="container" style="max-width: 1400px; width: 95%;">
 
-        <!-- GIANT COOP BOSS SECTION -->
-        <div class="monster-container">
-            <h2 style="font-size: 2.5rem; margin-bottom: 5px; color: var(--tertiary);">👹 El Monstruo del SIMCE (Apatía Escolar)</h2>
-            <p style="font-size: 1.2rem; color: #dcdde1;">Tus 40 alumnos están unidos. Cada respuesta correcta que den le asestará un súper rayo de energía.</p>
-            <div id="monster-emoji">👾</div>
-            <div class="hp-bar-bg">
-                <div id="hp-bar"></div>
-                <div id="hp-text">1000 / 1000 HP</div>
-            </div>
-            <div id="boss-confetti" style="display:none; margin-top:15px; font-size: 2rem; color:#2ecc71; font-weight:900;">¡VICTORIA ÉPICA DE LA CLASE! 🏆✨</div>
-        </div>
+        <!-- Pedagogical Header -->
+        <h2 style="font-size: 2rem; color: var(--dark); margin-bottom: 20px; background: rgba(255,255,255,0.8); padding: 15px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); text-align: center;">Resumen de la Sesión de Evaluación</h2>
 
         <div class="dashboard-grid" style="grid-template-columns: 1fr 2fr;">
             <!-- Left Panel: Live Control -->
             <div class="panel">
-                <h3>👥 Escuadrón de Alumnos</h3>
+                <h3>👥 Asistencia y Participación</h3>
                 <br>
                 <div style="font-size: 3.5rem; color: var(--primary); font-weight: 900;" id="student-count">0</div>
-                <p>Guerreros Conectados</p>
+                <p>Estudiantes Conectados</p>
                 <div id="student-names-list" style="margin-top: 15px; font-size: 1.1rem; color: #2C3E50; max-height: 150px; overflow-y: auto; background: rgba(0,0,0,0.05); padding: 10px; border-radius: 10px; text-align: left;">
                     <em>Esperando conexiones...</em>
                 </div>
                 <br><hr><br>
-                <h3>📊 Ráfaga Actual (Preg. en Curso)</h3>
+                <h3>📊 Análisis en Vivo (Preg. en Curso)</h3>
                 <br>
-                <p>Lasers disparados: <strong id="answer-count" style="font-size:1.5rem;">0</strong></p>
+                <p>Respuestas recibidas: <strong id="answer-count" style="font-size:1.5rem;">0</strong></p>
                 <p style="color:var(--success)">Tiros Acertados: <strong id="correct-count">0</strong></p>
                 <p style="color:var(--danger)">Tiros Errados: <strong id="incorrect-count">0</strong></p>
                 <br>
-                <button class="btn-stop" onclick="stopQuestion()">Pausar Ataque (Sala de Espera)</button>
+                <button class="btn-stop" onclick="stopQuestion()">Pausar Actividad (Enviar a Sala de Espera)</button>
             </div>
             
             <!-- Right Panel: Data Analysis and Questions -->
@@ -108,7 +55,7 @@
                 </div>
 
                 <br><br><br><hr><br>
-                <h3>📚 Arsenal de Preguntas (Munición Didáctica)</h3>
+                <h3>📚 Banco de Preguntas (Metas de Aprendizaje)</h3>
                 <br>
                 <div id="questions-list"></div>
             </div>

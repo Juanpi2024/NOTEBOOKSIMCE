@@ -66,11 +66,11 @@ socket.on('feedback', (data) => {
     feedbackModal.classList.add('visible');
     feedbackContent.className = 'feedback-content ' + (data.isCorrect ? 'correct' : 'incorrect');
     
-    // Gamification Feedback Injection!
+    // Feedback Pedagógico
     if (data.isCorrect) {
-        fbTitle.innerHTML = '¡IMPACTO DIRECTO! 🎯<br><span style="color:#f1c40f; font-size:1.8rem;">⚡ ¡Rayo de energía disparado al Monstruo!</span>';
+        fbTitle.innerHTML = '¡RESPUESTA CORRECTA! 🌟<br><span style="color:#f1c40f; font-size:1.8rem;">¡Excelente trabajo!</span>';
     } else {
-        fbTitle.innerHTML = '¡RAYO DESVIADO! 😟<br><span style="color:#e74c3c; font-size:1.5rem;">El ataque no tuvo efecto.</span>';
+        fbTitle.innerHTML = '¡CASI LO LOGRAS! 💡<br><span style="color:#e74c3c; font-size:1.5rem;">Revisemos juntos este concepto.</span>';
     }
     
     fbMessage.innerHTML = `<br><strong>Análisis de tu ataque:</strong><br>${data.message}`;

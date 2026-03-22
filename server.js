@@ -19,13 +19,12 @@ if (fs.existsSync(questionsPath)) {
     console.warn("⚠️ No questions.json found. Dashboard will be empty.");
 }
 
-// Global Game State (Including Monster)
+// Global Game State
 let gameState = {
     status: 'waiting', 
     currentQuestionIndex: -1,
     connectedStudents: {}, // socketId -> { name }
-    answers: {}, // socketId -> { answerId, isCorrect } (Current Question)
-    monster: { maxHp: 1000, hp: 1000 } // THE BOSS
+    answers: {} // socketId -> { answerId, isCorrect } (Current Question)
 };
 
 // Global History for Analytics
@@ -67,10 +66,7 @@ io.on('connection', (socket) => {
         const q = questions[gameState.currentQuestionIndex];
         const selectedOption = q.options.find(o => o.id === data.answerId);
         
-        // Gamification: Damage the monster
-        if (selectedOption.isCorrect && gameState.monster.hp > 0) {
-            gameState.monster.hp = Math.max(0, gameState.monster.hp - 20); // 20 damage per correct answer
-        }
+        // No monster logic, purely pedagogical
 
         // Save to current question state
         gameState.answers[socket.id] = { answerId: data.answerId, isCorrect: selectedOption.isCorrect };
@@ -111,5 +107,5 @@ io.on('connection', (socket) => {
 
 const PORT = process.env.PORT || 3000;
 server.listen(PORT, () => {
-    console.log(`🚀 Servidor Cooperativo (40+ Alumnos vs Monstruo) listo en: http://localhost:${PORT}`);
+    console.log(`🚀 Servidor Docente SIMCE listo en: http://localhost:${PORT}`);
 });
