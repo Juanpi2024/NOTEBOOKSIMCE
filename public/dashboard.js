@@ -12,6 +12,8 @@ const studentAnalysis = document.getElementById('student-analysis');
 // Pedagogical Elements
 // Last boss states removed
 let allQuestions = [];
+let currentGameState = null;
+let currentStudentStats = {};
 
 socket.on('connect', () => {
     socket.emit('join_role', { role: 'teacher' });
@@ -23,15 +25,8 @@ socket.on('load_questions', (questions) => {
 });
 
 socket.on('update_dashboard', (state) => {
-    // 1. Escuadron de Alumnos
-    const students = Object.values(state.connectedStudents);
-    studentCount.textContent = students.length;
-    
-    if (students.length > 0) {
-        studentNamesList.innerHTML = students.map(s => `<strong>✔️ ${s.name}</strong>`).join('<br>');
-    } else {
-        studentNamesList.innerHTML = "<em>Esperando reclutas...</em>";
-    }
+    currentGameState = state;
+    renderStudentList();
     
     // 2. Ráfaga Actual
     const answers = Object.values(state.answers);
@@ -56,6 +51,9 @@ socket.on('update_history', (historyList) => {
         studentData[record.studentName].total++;
         if (record.isCorrect) studentData[record.studentName].correct++;
     });
+    
+    currentStudentStats = studentData;
+    renderStudentList();
 
     axisAnalysis.innerHTML = Object.keys(axisData).map(axis => {
         const d = axisData[axis];
@@ -93,6 +91,37 @@ socket.on('update_history', (historyList) => {
         studentAnalysis.innerHTML = "<em>Esperando entrar en combate...</em>";
     }
 });
+
+function renderStudentList() {
+    if (!currentGameState) return;
+    const students = Object.values(currentGameState.connectedStudents);
+    studentCount.textContent = students.length;
+    
+    if (students.length > 0) {
+        studentNamesList.innerHTML = students.map(s => {
+            const stats = currentStudentStats[s.name] || { total: 0, correct: 0 };
+            let color = '#7f8c8d'; // Gris - Sin respuestas
+            let icon = '⚪';
+            let pctText = '-';
+            
+            if (stats.total > 0) {
+                const pct = Math.round((stats.correct / stats.total) * 100);
+                pctText = pct + '%';
+                if (pct >= 75) { color = 'var(--success)'; icon = '🟢'; }
+                else if (pct >= 50) { color = '#f1c40f'; icon = '🟡'; }
+                else { color = 'var(--danger)'; icon = '🔴'; }
+            }
+            
+            return `
+                <div style="padding: 8px 5px; border-bottom: 1px solid #eee; display:flex; justify-content:space-between; align-items:center;">
+                    <span><strong>${icon} ${s.name}</strong></span> 
+                    <span style="color:${color}; font-weight:900; font-size:1.1rem; background:rgba(0,0,0,0.05); padding:2px 8px; border-radius:8px;">${pctText}</span>
+                </div>`;
+        }).join('');
+    } else {
+        studentNamesList.innerHTML = "<em>Esperando conexiones...</em>";
+    }
+}
 
 function renderQuestions() {
     questionsList.innerHTML = '';
