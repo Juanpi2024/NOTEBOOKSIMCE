@@ -125,19 +125,38 @@ function renderStudentList() {
 
 function renderQuestions() {
     questionsList.innerHTML = '';
+    
+    // Group by essay
+    const grouped = {};
     allQuestions.forEach((q, index) => {
-        const card = document.createElement('div');
-        card.className = 'q-card';
-        card.innerHTML = `
-            <div style="display:flex; justify-content:space-between; align-items:center;">
-                <strong>${q.axis} (${q.subject})</strong>
-                <span style="background:var(--tertiary); padding:2px 8px; border-radius:10px; font-size:0.8rem;">Munición: ${q.achievement_level}</span>
-            </div>
-            <p style="margin: 10px 0;">${q.question}</p>
-            <button class="btn-launch" onclick="launchQuestion(${index})">🚀 Enviar pregunta a la clase (${q.id})</button>
-        `;
-        questionsList.appendChild(card);
+        const essayName = q.essay || 'Preguntas Adicionales';
+        if (!grouped[essayName]) grouped[essayName] = [];
+        grouped[essayName].push({ q, index });
     });
+    
+    for (const [essayName, items] of Object.entries(grouped)) {
+        const header = document.createElement('h3');
+        header.textContent = essayName;
+        header.style.marginTop = "20px";
+        header.style.marginBottom = "10px";
+        header.style.paddingBottom = "5px";
+        header.style.borderBottom = "2px solid var(--primary)";
+        questionsList.appendChild(header);
+        
+        items.forEach(({ q, index }) => {
+            const card = document.createElement('div');
+            card.className = 'q-card';
+            card.innerHTML = `
+                <div style="display:flex; justify-content:space-between; align-items:center;">
+                    <strong>${q.axis} (${q.subject})</strong>
+                    <span style="background:var(--tertiary); padding:2px 8px; border-radius:10px; font-size:0.8rem;">Dificultad: ${q.achievement_level}</span>
+                </div>
+                <p style="margin: 10px 0;">${q.question}</p>
+                <button class="btn-launch" onclick="launchQuestion(${index})">🚀 Lanzar a la clase (${q.id})</button>
+            `;
+            questionsList.appendChild(card);
+        });
+    }
 }
 
 function launchQuestion(index) {

@@ -25,7 +25,8 @@
         "error_analysis": "Las leyendas suelen explicar el origen de algo fantástico o real de una localidad, lo cual no ocurre aquí."
       }
     ],
-    "feedback_immediate": "Recuerda que si los personajes son animales y hay una moraleja, estamos ante una fábula."
+    "feedback_immediate": "Recuerda que si los personajes son animales y hay una moraleja, estamos ante una fábula.",
+    "essay": "Ensayo SIMCE - Forma A"
   },
   {
     "id": "TALLER_SIMCE_01_06",
@@ -53,7 +54,8 @@
         "error_analysis": "Esta palabra califica el aspecto físico, no el estado de ánimo opuesto a la tristeza."
       }
     ],
-    "feedback_immediate": "Los antónimos son palabras que expresan ideas totalmente opuestas."
+    "feedback_immediate": "Los antónimos son palabras que expresan ideas totalmente opuestas.",
+    "essay": "Ensayo SIMCE - Forma A"
   },
   {
     "id": "TALLER_SIMCE_03_14",
@@ -81,7 +83,8 @@
         "error_analysis": "El texto aclara explícitamente que aparecieron 'mucho tiempo antes que el hombre'."
       }
     ],
-    "feedback_immediate": "Siempre busca la información numérica específica en los textos informativos."
+    "feedback_immediate": "Siempre busca la información numérica específica en los textos informativos.",
+    "essay": "Ensayo SIMCE - Forma A"
   },
   {
     "id": "TALLER_SIMCE_03_21",
@@ -109,7 +112,8 @@
         "error_analysis": "El dorso es la parte de arriba (la espalda), mientras que el costado es la parte lateral."
       }
     ],
-    "feedback_immediate": "Sustituir la palabra por sus opciones te ayuda a encontrar el significado correcto en la oración."
+    "feedback_immediate": "Sustituir la palabra por sus opciones te ayuda a encontrar el significado correcto en la oración.",
+    "essay": "Ensayo SIMCE - Forma A"
   },
   {
     "id": "ASTORECA_MAT_01",
@@ -143,7 +147,8 @@
         "feedback_immediate": "¡Excelente! Ubicaste correctamente el 6 en la unidad de mil, el 2 en la centena y el 2 en la unidad[cite: 2241, 2246]."
       }
     ],
-    "feedback_immediate": "Para escribir números grandes, identifica primero las unidades de mil, luego centenas, decenas y unidades."
+    "feedback_immediate": "Para escribir números grandes, identifica primero las unidades de mil, luego centenas, decenas y unidades.",
+    "essay": "Ensayo SIMCE - Forma A"
   },
   {
     "id": "ASTORECA_MAT_02",
@@ -177,7 +182,8 @@
         "error_analysis": "Calculaste mal la suma. Recuerda que la diferencia entre 137 y 125 es 12."
       }
     ],
-    "feedback_immediate": "En una serie aritmética, primero resta dos números seguidos para encontrar el 'patrón' o diferencia."
+    "feedback_immediate": "En una serie aritmética, primero resta dos números seguidos para encontrar el 'patrón' o diferencia.",
+    "essay": "Ensayo SIMCE - Forma A"
   },
   {
     "id": "ASTORECA_MAT_03",
@@ -211,7 +217,8 @@
         "error_analysis": "50 centenas equivalen a 5.000 unidades, no a 500."
       }
     ],
-    "feedback_immediate": "Recuerda siempre: 1 Decena = 10 Unidades; 1 Centena = 100 Unidades."
+    "feedback_immediate": "Recuerda siempre: 1 Decena = 10 Unidades; 1 Centena = 100 Unidades.",
+    "essay": "Ensayo SIMCE - Forma A"
   },
   {
     "id": "ASTORECA_MAT_13",
@@ -245,7 +252,8 @@
         "error_analysis": "Este es el total de animales que NO son gallinas. Debes restarlo de 50 para hallar las gallinas."
       }
     ],
-    "feedback_immediate": "Para resolver problemas de 'el resto', suma primero las partes conocidas y réstalas del total."
+    "feedback_immediate": "Para resolver problemas de 'el resto', suma primero las partes conocidas y réstalas del total.",
+    "essay": "Ensayo SIMCE - Forma A"
   },
   {
     "id": "ASTORECA_MAT_21",
@@ -279,7 +287,8 @@
         "error_analysis": "El total es llegar a Turán. En Caupolicán apenas está comenzando."
       }
     ],
-    "feedback_immediate": "Cuenta los 'espacios' o tramos entre los puntos para identificar la fracción del camino."
+    "feedback_immediate": "Cuenta los 'espacios' o tramos entre los puntos para identificar la fracción del camino.",
+    "essay": "Ensayo SIMCE - Forma A"
   },
   {
     "id": "ASTORECA_MAT_23",
@@ -313,7 +322,8 @@
         "error_analysis": "Tiene solo 5 vértices y 5 caras."
       }
     ],
-    "feedback_immediate": "Los vértices son las 'puntas' del cuerpo. Cuéntalos con cuidado para identificar la figura."
+    "feedback_immediate": "Los vértices son las 'puntas' del cuerpo. Cuéntalos con cuidado para identificar la figura.",
+    "essay": "Ensayo SIMCE - Forma A"
   },
   {
     "id": "ASTORECA_C_01",
@@ -347,7 +357,8 @@
         "error_analysis": "Este valor corresponde a la medida inicial o al número de meses transcurridos, no al crecimiento real."
       }
     ],
-    "feedback_immediate": "Recuerda que para encontrar un aumento o cambio, utilizamos la resta entre el valor final y el inicial."
+    "feedback_immediate": "Recuerda que para encontrar un aumento o cambio, utilizamos la resta entre el valor final y el inicial.",
+    "essay": "Ensayo SIMCE - Forma A"
   },
   {
     "id": "ASTORECA_C_02",
@@ -381,7 +392,8 @@
         "feedback_immediate": "¡Perfecto! Multiplicaste correctamente 4.329 por 1.000. ¡Chile es muy largo!"
       }
     ],
-    "feedback_immediate": "Para convertir kilómetros a metros, siempre añade tres ceros al final del número (multiplicar por 1.000)."
+    "feedback_immediate": "Para convertir kilómetros a metros, siempre añade tres ceros al final del número (multiplicar por 1.000).",
+    "essay": "Ensayo SIMCE - Forma B"
   },
   {
     "id": "ASTORECA_C_07",
@@ -415,7 +427,8 @@
         "feedback_immediate": "¡Muy bien! Manzanas (11) + Uvas (4) da un total de 15 estudiantes."
       }
     ],
-    "feedback_immediate": "Cuando te piden el 'total' entre dos categorías de un gráfico, debes identificar el valor de cada una y sumarlos."
+    "feedback_immediate": "Cuando te piden el 'total' entre dos categorías de un gráfico, debes identificar el valor de cada una y sumarlos.",
+    "essay": "Ensayo SIMCE - Forma B"
   },
   {
     "id": "ASTORECA_C_20",
@@ -449,7 +462,8 @@
         "error_analysis": "Los valores no corresponden a las posiciones del número original 1.254."
       }
     ],
-    "feedback_immediate": "La descomposición aditiva muestra el valor real de cada número según si es unidad, decena, centena o unidad de mil."
+    "feedback_immediate": "La descomposición aditiva muestra el valor real de cada número según si es unidad, decena, centena o unidad de mil.",
+    "essay": "Ensayo SIMCE - Forma B"
   },
   {
     "id": "ASTORECA_C_27",
@@ -483,7 +497,8 @@
         "error_analysis": "Este es el cálculo de un tercio (galletas de chocolate), pero se te preguntó por las de avena (un cuarto)."
       }
     ],
-    "feedback_immediate": "Para sacar una parte (fracción) de un número total, divide el total por el denominador de la fracción."
+    "feedback_immediate": "Para sacar una parte (fracción) de un número total, divide el total por el denominador de la fracción.",
+    "essay": "Ensayo SIMCE - Forma B"
   },
   {
     "id": "ASTORECA_C_08",
@@ -511,7 +526,8 @@
         "error_analysis": "Nuevamente, los cuerpos redondos no tienen caras poligonales definidas."
       }
     ],
-    "feedback_immediate": "Los cuerpos geométricos se pueden clasificar en poliedros (caras planas) y cuerpos redondos (caras curvas)."
+    "feedback_immediate": "Los cuerpos geométricos se pueden clasificar en poliedros (caras planas) y cuerpos redondos (caras curvas).",
+    "essay": "Ensayo SIMCE - Forma B"
   },
   {
     "id": "ASTORECA_A_19",
@@ -539,7 +555,8 @@
         "feedback_immediate": "¡Correcto! La señal de Ceda el Paso tiene tres lados y tres vértices, formando un triángulo invertido[cite: 1123, 1124]."
       }
     ],
-    "feedback_immediate": "Los triángulos se identifican por tener exactamente tres lados rectos[cite: 1117]."
+    "feedback_immediate": "Los triángulos se identifican por tener exactamente tres lados rectos[cite: 1117].",
+    "essay": "Ensayo SIMCE - Forma B"
   },
   {
     "id": "ASTORECA_A_20",
@@ -567,7 +584,8 @@
         "error_analysis": "Parece que hubo un error en la suma de las barras. Revisa nuevamente el valor del martes (25) y viernes (35)[cite: 1132, 1142]."
       }
     ],
-    "feedback_immediate": "Para hallar el total en un gráfico de barras, debes identificar el valor de cada barra y sumarlos todos[cite: 1139, 1140]."
+    "feedback_immediate": "Para hallar el total en un gráfico de barras, debes identificar el valor de cada barra y sumarlos todos[cite: 1139, 1140].",
+    "essay": "Ensayo SIMCE - Forma B"
   },
   {
     "id": "NINJA_MAT_19",
@@ -595,7 +613,8 @@
         "error_analysis": "Esta disposición no coincide con la ubicación de los cubos en la estructura original[cite: 70, 75]."
       }
     ],
-    "feedback_immediate": "Imagina que eres un pájaro volando sobre la figura; solo verías los cuadrados que apuntan al cielo[cite: 72]."
+    "feedback_immediate": "Imagina que eres un pájaro volando sobre la figura; solo verías los cuadrados que apuntan al cielo[cite: 72].",
+    "essay": "Ensayo SIMCE - Forma B"
   },
   {
     "id": "NINJA_MAT_35",
@@ -623,7 +642,8 @@
         "error_analysis": "La suma de los trabajadores que entrenan 0, 1 o 2 días es menor que el resto del grupo[cite: 156, 163]."
       }
     ],
-    "feedback_immediate": "La mayoría se identifica observando dónde se concentran las barras más altas del gráfico[cite: 154, 158]."
+    "feedback_immediate": "La mayoría se identifica observando dónde se concentran las barras más altas del gráfico[cite: 154, 158].",
+    "essay": "Ensayo SIMCE - Forma B"
   },
   {
     "id": "ASTORECA_C_30",
@@ -651,6 +671,7 @@
         "feedback_immediate": "¡Excelente! Como en cada metro caben dos medios metros, en 4 metros hay 4 x 2 = 8 pedazos[cite: 1636]."
       }
     ],
-    "feedback_immediate": "Cuando divides un entero por una fracción como 1/2, el resultado es el doble del entero[cite: 1635]."
+    "feedback_immediate": "Cuando divides un entero por una fracción como 1/2, el resultado es el doble del entero[cite: 1635].",
+    "essay": "Ensayo SIMCE - Forma B"
   }
 ]
